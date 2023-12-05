@@ -1,0 +1,76 @@
+$color-principal: #F3F9D2;
+$color-secundario: rgb(144, 19, 148);
+
+
+
+body{
+  background: rgb(8,170,29);
+background: linear-gradient(90deg, rgba(8,170,29,1) 0%, rgba(245,22,199,1) 0%, rgba(121,9,205,1) 0%, rgba(173,40,182,1) 100%, rgba(115,37,98,1) 100%, rgba(25,233,164,1) 100%);
+}
+
+h1, h3{
+  text-align: center;
+  color: #000000;
+}
+
+.padding{
+  padding-top: 90px;
+}
+
+.matias{
+  color: orange;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+}
+
+button{
+  background-color:#FEFEFF;
+  color:#1C1C1C;
+  border:none;
+  height:60px;
+  font-size:6 0px;
+  padding: 0 2em;
+  cursor: pointer;
+  border: 1px black solid;
+  font-weight: bold;
+}
+button:hover{
+  background-color: $color-secundario;
+  border: 1px black solid ;
+  transition: all 0.8s;
+  color: black;
+  cursor: pointer;
+}
+
+.icon{
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  padding: 100px;
+  margin: auto;
+ 
+}
+
+.icon i{
+  margin: 30px;
+  color: black;
+}
+
+.icon i:hover{
+  color: $color-secundario;
+}
+
+ul{
+  list-style: none;
+}
+
+.alinear{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
