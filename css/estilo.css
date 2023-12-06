@@ -159,11 +159,6 @@ label {
   outline: 0;
 }
 
-.foto:hover {
-  filter: saturate(200%);
-  cursor: pointer;
-}
-
 * {
   margin: 0;
   padding: 0;
