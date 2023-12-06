@@ -1,18 +1,16 @@
 .container{
-   display: flex;
    padding-top: 30px;
 }
 
-.row{
-    justify-content: center;
-    align-items: center;
-}
-
 .col{
-    margin: 20px;
+  margin: 20px;
+  padding: 20px;
+ 
 }
 
-img:hover{
-    filter: grayscale(80%);
-    cursor: pointer;
+
+.imagen-portfolio:hover{
+    filter: opacity(.5);   
+     cursor: pointer;
+    transition: .5s;
 }

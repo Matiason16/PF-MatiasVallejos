@@ -9,6 +9,7 @@ h1, h3 {
 
 .matias {
   color: white;
+  text-shadow: 2px 2px 2px blue;
 }
 
 .contenedor {
@@ -18,7 +19,7 @@ h1, h3 {
   padding-top: 35px;
 }
 
-button {
+.boton-portfolio {
   background-color: rgb(247, 0, 255);
   color: #000000;
   border: none;
@@ -31,7 +32,7 @@ button {
   border: 1px black solid;
 }
 
-button:hover {
+.boton-portfolio:hover {
   background-color: #000000;
   transition: all 0.8s;
   color: white;
@@ -51,10 +52,6 @@ button:hover {
   color: white;
 }
 
-.icon i:hover {
-  color: #000000;
-}
-
 ul {
   list-style: none;
 }
@@ -65,30 +62,46 @@ ul {
   align-items: center;
 }
 
-#opciones {
-  display: flex;
+.wsp:hover {
+  color: rgb(0, 255, 0);
+}
+
+.tw:hover {
+  color: aqua;
+}
+
+.fb:hover {
+  color: rgb(69, 69, 214);
+}
+
+.ig:hover {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-radius: 26%;
 }
 
 nav {
   float: left;
+  width: 100%;
 }
 
 .container {
-  display: flex;
   padding-top: 30px;
-}
-
-.row {
-  justify-content: center;
-  align-items: center;
 }
 
 .col {
   margin: 20px;
+  padding: 20px;
 }
 
-img:hover {
-  filter: grayscale(80%);
+.imagen-portfolio:hover {
+  filter: opacity(0.5);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.foto:hover {
+  filter: saturate(200%);
   cursor: pointer;
 }
 
@@ -104,13 +117,14 @@ body {
 }
 
 footer {
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 15px;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  color: #EEF0F2;
+  height: 60px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=estilo.css.map */

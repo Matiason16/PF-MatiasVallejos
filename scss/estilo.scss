@@ -2,6 +2,9 @@
 @use 'index';
 @use 'navbar';
 @use 'portfolio';
+@use 'contactame';
+@use 'sobremi';
+
 
 //Variables
 $color-principal: #ffffff;
@@ -17,21 +20,19 @@ $negro: #000000;
     padding: 0;
      box-sizing: border-box; 
 }
-
 body{
   background: rgb(8,170,29);
 background: linear-gradient(90deg, rgba(8,170,29,1) 0%, rgba(245,22,199,1) 0%, rgba(121,9,205,1) 0%, rgba(173,40,182,1) 100%, rgba(115,37,98,1) 100%, rgba(25,233,164,1) 100%);
 }
-
-
 footer{
-  background-color: $negro;
+  background-color: $color-principal;
   padding: 15px;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  color: #EEF0F2;
+  height: 60px;
+  color: $negro;
 }
 
 
