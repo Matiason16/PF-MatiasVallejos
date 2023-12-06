@@ -11,9 +11,27 @@ $color-principal: #ffffff;
 $color-secundario: rgb(247, 0, 255);
 $negro: #000000;
 
+@mixin fondo-color(){
+  background-color: #000000;
+  color: #ffffff;
+}
 
 
+.contenedor-contactame{
+  @include fondo-color;
+  }
 
+  .contenedor-portfolio{
+    @include fondo-color;
+
+  }
+  .yo{
+    @include fondo-color;
+  }
+
+  .uno{
+    font-size: 30px;
+  }
 
 * {
     margin:0;
@@ -35,5 +53,15 @@ footer{
   color: $negro;
 }
 
+.foto{
+  border-radius: 50%;
+}
 
+.parrafo{
+  padding-top:20px ;
+  color: #000000;
+  font-size: 28px;
+  text-align: center;
+  overflow-y: scroll;
+}
 
