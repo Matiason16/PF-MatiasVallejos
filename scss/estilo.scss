@@ -2,7 +2,7 @@
 @use 'index';
 @use 'portfolio';
 @use 'contactame';
-
+@use 'habilidades';
 
 
 //Variables
@@ -18,7 +18,7 @@ $negro: #000000;
 @mixin divisor(){
   height: 4px;
   width: 60px;
-  background-color:blue;
+  background-color:#FF00E4;
   margin-top: 5px;
   margin-bottom: 2em;
 }

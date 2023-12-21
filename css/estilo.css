@@ -85,24 +85,69 @@ ul {
   margin-left: 60px;
 }
 
-.col {
-  padding-bottom: 40px;
-  margin: 0 auto;
+.portfolio {
+  color: #fff;
+  padding: 20px 20px;
 }
 
-.imagen-portfolio {
-  width: 350px;
-}
-@media screen and (max-width: 565px) {
-  .imagen-portfolio {
-    width: 150px;
-  }
+.portfolio .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
 }
 
-.imagen-portfolio:hover {
-  filter: opacity(0.5);
+.portfolio h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.portfolio .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto {
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 10px;
   cursor: pointer;
-  transition: 0.5s;
+}
+
+.portfolio .galeria .proyecto img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio .galeria .proyecto .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28, 182, 152, 0.8), rgba(28, 182, 152, 0.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+  opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+  margin-bottom: 0px;
 }
 
 .content {
@@ -110,17 +155,17 @@ ul {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 label {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .contact-form {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .contact-form form {
@@ -148,8 +193,8 @@ label {
   border: none;
   background: none;
   outline: 0;
-  color: rgb(255, 255, 255);
-  border-bottom: 1px solid #d63031;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #FF00E4;
 }
 
 .contact-form form button {
@@ -165,6 +210,126 @@ label {
   color: white;
   transition: background-color 1s ease-out;
   outline: 0;
+}
+
+.curriculum {
+  color: #000000;
+  padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.curriculum h2 {
+  font-size: 48px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.curriculum .fila {
+  display: flex;
+  justify-content: space-between;
+}
+
+.curriculum .fila .col {
+  width: 49%;
+  padding: 0 20px;
+}
+
+.curriculum .fila .col h3 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.curriculum .fila .izquierda {
+  border-right: 2px solid #252A2E;
+}
+
+.curriculum .fila .derecha {
+  border-left: 2px solid #252A2E;
+}
+
+.curriculum .fila .item {
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.curriculum .fila .item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.curriculum .fila .item .casa {
+  color: #FF00E4;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+
+.curriculum .fila .item .fecha {
+  display: block;
+  color: #FF00E4;
+  margin-bottom: 10px;
+}
+
+.curriculum .fila .item p {
+  line-height: 24px;
+}
+
+.curriculum .fila .izq {
+  border-right: 2px solid #FF00E4;
+  margin-right: 20px;
+}
+
+.curriculum .fila .der {
+  border-left: 2px solid #FF00E4;
+  margin-left: 20px;
+}
+
+.curriculum .fila .item .conectori {
+  height: 2px;
+  background-color: #000000;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  right: -47px;
+  z-index: 5;
+}
+
+.curriculum .fila .item .conectori .circuloi {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #000000;
+  float: right;
+  position: relative;
+  bottom: 4px;
+}
+
+.curriculum .fila .item .conectord {
+  height: 2px;
+  background-color: #000000;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  left: -47px;
+  z-index: 5;
+}
+
+.curriculum .fila .item .conectord .circulod {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  float: left;
+  position: relative;
+  bottom: 4px;
 }
 
 .contenedor-contactame {
@@ -274,7 +439,7 @@ nav {
 .divider {
   height: 4px;
   width: 60px;
-  background-color: blue;
+  background-color: #FF00E4;
   margin-top: 5px;
   margin-bottom: 2em;
 }
