@@ -1,16 +1,18 @@
-.container{
-  float: right;
-  padding-top:10px ;
-}
+
 
 .col{
-  margin: 10px;
-  padding: 10px;
- 
+  padding-bottom: 40px;
+  margin: 0 auto;
 }   
 
 
-
+.imagen-portfolio{
+  width: 350px;
+  @media screen and (max-width:565px) {
+    width: 150px;
+    
+  }
+}
 
 .imagen-portfolio:hover{
     filter: opacity(.5);   

@@ -55,6 +55,7 @@ border: 1px black solid;
  
 }
 
+
 .icon i{
   margin: 30px;
   color: white;
@@ -70,7 +71,9 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
 
 .wsp:hover{
   color: rgb(0, 255, 0);
@@ -94,3 +97,5 @@ ul{
 .nav-link{
   margin-left: 60px;
 }
+
+

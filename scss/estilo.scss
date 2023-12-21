@@ -1,6 +1,5 @@
 //Use
 @use 'index';
-@use 'navbar';
 @use 'portfolio';
 @use 'contactame';
 
@@ -16,6 +15,13 @@ $negro: #000000;
   color: #ffffff;
 }
 
+@mixin divisor(){
+  height: 4px;
+  width: 60px;
+  background-color:blue;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
 
 .contenedor-contactame{
   @include fondo-color;
@@ -24,13 +30,6 @@ $negro: #000000;
   .contenedor-portfolio{
     @include fondo-color;
 
-  }
-  .yo{
-    @include fondo-color;
-  }
-
-  .uno{
-    font-size: 30px;
   }
 
 * {
@@ -44,17 +43,17 @@ background: linear-gradient(90deg, rgba(8,170,29,1) 0%, rgba(245,22,199,1) 0%, r
 }
 footer{
   background-color: $color-principal;
-  padding: 15px;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 50px;
   color: $negro;
 }
 
 .foto{
-  border-radius: 50%;
+  border: 7px solid black;
+  width: 300px;
 }
 
 .parrafo{
@@ -62,12 +61,98 @@ footer{
   color: #000000;
   font-size: 28px;
   text-align: center;
-  overflow-y: scroll;
 }
 
 
 
-.card-container{
-  display:inline-flex
 
+nav{
+  float: left;
+  width: 100%;
+}
+
+html{
+  @media screen and (max-width:540px) {
+    font-size: 8px;
+    
+  }
+}
+
+
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+}
+
+.download-cv:hover {
+  background-color: azure;
+  box-shadow: none;
+  color: #000000;
+}
+
+.main img {
+  border:  7px solid aqua;
+  width: 350px;
+  height: 520px;
+  z-index: 1;
+
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+  filter: saturate(150%);
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px blue;
+}
+
+.divider {
+@include divisor();
+}
+
+
+
+.about p {
+  margin-bottom: 1em;
+}
+
+.personales{
+  color: #ffffff;
+  text-shadow: 2px 2px 2px blue;
+}
+.column{
+  padding: 20px;
+  font-size: 20px;
+}
+.datos{
+  padding: 20px;
+}
+
+strong{
+  color: black;
 }

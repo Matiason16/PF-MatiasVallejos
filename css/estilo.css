@@ -60,6 +60,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .wsp:hover {
@@ -84,19 +85,18 @@ ul {
   margin-left: 60px;
 }
 
-nav {
-  float: left;
-  width: 100%;
-}
-
-.container {
-  float: right;
-  padding-top: 10px;
-}
-
 .col {
-  margin: 10px;
-  padding: 10px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.imagen-portfolio {
+  width: 350px;
+}
+@media screen and (max-width: 565px) {
+  .imagen-portfolio {
+    width: 150px;
+  }
 }
 
 .imagen-portfolio:hover {
@@ -120,8 +120,7 @@ label {
 }
 
 .contact-form {
-  background: rgb(9, 191, 217);
-  background: linear-gradient(70deg, rgb(9, 191, 217) 22%, rgb(176, 0, 224) 79%);
+  background-color: #000000;
 }
 
 .contact-form form {
@@ -178,15 +177,6 @@ label {
   color: #ffffff;
 }
 
-.yo {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.uno {
-  font-size: 30px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -200,17 +190,17 @@ body {
 
 footer {
   background-color: #ffffff;
-  padding: 15px;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 50px;
   color: #000000;
 }
 
 .foto {
-  border-radius: 50%;
+  border: 7px solid black;
+  width: 300px;
 }
 
 .parrafo {
@@ -218,11 +208,97 @@ footer {
   color: #000000;
   font-size: 28px;
   text-align: center;
-  overflow-y: scroll;
 }
 
-.card-container {
-  display: inline-flex;
+nav {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+
+.download-cv:hover {
+  background-color: azure;
+  box-shadow: none;
+  color: #000000;
+}
+
+.main img {
+  border: 7px solid aqua;
+  width: 350px;
+  height: 520px;
+  z-index: 1;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+  filter: saturate(150%);
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px blue;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: blue;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+.personales {
+  color: #ffffff;
+  text-shadow: 2px 2px 2px blue;
+}
+
+.column {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.datos {
+  padding: 20px;
+}
+
+strong {
+  color: black;
 }
 
 /*# sourceMappingURL=estilo.css.map */
